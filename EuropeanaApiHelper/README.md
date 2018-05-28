@@ -6,13 +6,12 @@ Contains tools to retrieve collections from Europeana API
 Il est nécessaire d'avoir installé Python3 pour éxécuter ces scipts. (https://www.python.org/downloads/)
 
 
-### Convert a Json file to CSV
-Pour convertir un fichier json en fichier csv, entrez la commande suivante dans un terminal:
+### Simple search
+Pour stocker le résultat d'une requête simple dans un fichier JSON, entrez la commande suivante dans un terminal : 
 
 ```
-python3 JtoC.py your_file.json
+curl "https://www.europeana.eu/api/v2/search.json?wskey=CLE_PUBLIQUE&query=REQUETE" > nom_fichier.json
 ```
-
 
 ### Cursor search
 L'API Europeana utilise le cursor search pour récupérer plusieurs pages de données. Le script europeana_cursor_search.py gère automatiquement le cursor search et enregistre les données directement de un fichier csv.
@@ -39,3 +38,18 @@ Enuite, entrez la commande suivante dans votre terminal :
 python3 europeana_cursor_search.py "https://www.europeana.eu/api/v2/search.json?wskey=CLE_PUBLIQUE&query=REQUETE" nom_fichier.csv --col mes_colonnes.txt
 ```
 
+
+
+
+
+
+
+# Python JSON to CSV converter
+Convertion de fichier json vers csv depuis la ligne de commande 
+
+
+Pour convertir un fichier json en fichier csv, entrez la commande suivante dans un terminal:
+
+```
+python3 JtoC.py your_file.json
+```
