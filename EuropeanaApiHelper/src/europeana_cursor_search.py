@@ -11,7 +11,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='extract all \
                                             items from a collection')
     parser.add_argument('query', type=str, help='Query without \
-                                                        cursor indication')
+                                            cursor indication')
     parser.add_argument('file_path', type=str, help='Output csv filename')
     parser.add_argument('--col', type=str, help='Path to your column file')
 
@@ -49,15 +49,18 @@ if __name__ == '__main__':
                     os.remove('tmp.json')
                     break
 
-        if args.col.endswith('.txt'):
-            try:
-                with open(args.col) as f:
-                    to_keep = [s.rstrip() for s in f]
-                    items = [{k: i[k] for k in i if k in to_keep}
-                             for i in items]
-            except Exception:
-                print('\n\n[ ! ] Cannot open', args.col)
-                exit()
+        # Keep user labels only
+        if args.col is not None:
+            if args.col.endswith('.txt'):
+                print('[ + ] Reading', args.col, type(args.col))
+                try:
+                    with open(args.col.rstrip()) as f:
+                        to_keep = [s.rstrip() for s in f]
+                        items = [{k: i[k] for k in i if k in to_keep}
+                                 for i in items]
+                except FileNotFoundError:
+                    print('\n\n[ ! ] Cannot open', args.col)
+                    exit()
 
         print('[ + ] Items found:', len(items))
 
