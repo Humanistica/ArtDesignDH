@@ -65,7 +65,7 @@ if __name__ == '__main__':
         print('[ + ] Items found:', len(items))
 
         # Save data to csv
-        with open(args.file_path, 'w') as f:
+        with open(args.file_path, 'w', encoding='utf8') as f:
 
             header = []
             for i in items:
