@@ -51,7 +51,7 @@
       <div class="jumbotron">
         <h4>Téléchargement</h4>
         <br />
-        <a href="/return-file/" target="blank"><button class="btn btn-primary">Fichier CSV</button></a>
+        <a href="/return-file"><button class="btn btn-primary">Fichier CSV</button></a>
       </div>
     </div>
 
@@ -60,30 +60,37 @@
         <h4>Aperçu</h4>
         <br />
         <p>10 résultats sur {{ len }}</p>
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Title</th>
-              <th>Country</th>
-              <th>Provider</th>
-              <th>Type</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for i in items[:10] %}
-              <tr>
-                <td>{{ i.items_id }}</td>
-                <td>{{ i.items_title }}</td>
-                <td>{{ i.items_country }}</td>
-                <td>{{ i.items_dataProvider }}</td>
-                <td>{{ i.items_type }}</td>
-              </tr>
-            {% endfor %}
-          </tbody>
-        </table>
       </div>
     </div>
+
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Creator</th>
+          <th>Creation Date</th>
+          <th>Type</th>
+          <th>Preview</th>
+          <th>Provider</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in items[:10] %}
+          <tr>
+            <td>{{ i.items_id }}</td>
+            <td>{{ i.items_title }}</td>
+            <td>{{ i.items_dcCreator }}</td>
+            <td>{{ i.items_edmTimespanLabelLangAware_def }}</td>
+            <td>{{ i.items_type }}</td>
+            <td>{{ i.items_edmPreview }}</td>
+            <td>{{ i.items_dataProvider }}</td>
+            <td>{{ i.items_country }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
 
     </form>
   </body>

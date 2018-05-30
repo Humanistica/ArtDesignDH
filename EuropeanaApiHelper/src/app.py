@@ -1,5 +1,7 @@
 #!flask/bin/python
-from flask import Flask, render_template, request, send_file
+import csv
+
+from flask import Flask, render_template, request, Response
 
 from api_caller import execute_query
 from data_manager import check_form, parse_query, reset_usr_data
@@ -41,8 +43,11 @@ def get_request_infos():
         filters[key] = request.form[key].rstrip()
 
     if check_form(usr_data) is True:
+        dates = [usr_data['from'], usr_data['to']]
+        if dates == ['', '']:
+            dates = None
         query = parse_query(usr_data)
-        items = execute_query(query, filters)
+        items = execute_query(query, filters, dates)
         usr_data = reset_usr_data(usr_data)
         return result_page()
     else:
@@ -54,10 +59,15 @@ def result_page():
     return render_template('result.html', items=items, len=len(items))
 
 
-@app.route('/return-file/')
+@app.route('/return-file')
 def return_file():
-    return send_file('./tmp/output.csv',
-                     attachment_filename='europeana_api_data.csv')
+    with open('./tmp/output.csv') as f:
+        data = f.read()
+    return Response(
+        data,
+        mimetype="text/csv",
+        headers={"Content-disposition":
+                 "attachment; filename=europeana_data.csv"})
 
 
 if __name__ == '__main__':
