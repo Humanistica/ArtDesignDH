@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Load jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <title>Europeana Search</title>
+  </head>
+
+  <body>
+    {% with messages = get_flashed_messages() %}
+	   {% if messages %}
+	    {% for message in messages %}
+		      <div class="alert alert-warning alert-dismissible" role="alert">
+		      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+			   {{message}}
+		    </div>
+		    {% endfor %}
+	   {% endif %}
+	   {% endwith %}
+
+	{% block body %}{% endblock %}
+    <header>
+      <div class="container">
+        <div class="jumbotron">
+          <br />
+          <br />
+          <a href="/"><h1>Europeana Search API</h1></a>
+          <br />
+          <p>
+            Vous pouvez désormais récuperer les données.
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <div class="container">
+      <div class="jumbotron">
+        <h4>Téléchargement</h4>
+        <br />
+        <a href="/return-file/" target="blank"><button class="btn btn-primary">Fichier CSV</button></a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h4>Aperçu</h4>
+        <br />
+        <p>10 résultats sur {{ len }}</p>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Country</th>
+              <th>Provider</th>
+              <th>Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for i in items[:10] %}
+              <tr>
+                <td>{{ i.items_id }}</td>
+                <td>{{ i.items_title }}</td>
+                <td>{{ i.items_country }}</td>
+                <td>{{ i.items_dataProvider }}</td>
+                <td>{{ i.items_type }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    </form>
+  </body>
+</html>

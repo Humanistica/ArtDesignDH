@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Load jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <title>Europeana Search</title>
+  </head>
+
+  <body>
+    {% with messages = get_flashed_messages() %}
+	   {% if messages %}
+	    {% for message in messages %}
+		      <div class="alert alert-warning alert-dismissible" role="alert">
+		      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+			   {{message}}
+		    </div>
+		    {% endfor %}
+	   {% endif %}
+	   {% endwith %}
+
+	{% block body %}{% endblock %}
+    <header>
+      <div class="container">
+        <div class="jumbotron">
+          <br />
+          <br />
+          <h1>Europeana Search API</h1>
+          <br />
+          <p>
+            Cette application utilise l'API d'Europeana afin de collecter un corpus
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <form method="post">
+
+      <!-- Clé Publique -->
+      <div class='container'>
+        <div class="jumbotron">
+          <h4>Authentification</h4>
+          <br />
+          <label for="key">Clé publique :</label>
+          <input type="text" class="form-control" name="key" id="key" value={{ usr.key }}>
+        </div>
+      </div>
+
+      <!-- Filtre Dublin Core -->
+      <div class='container'>
+        <div class="jumbotron">
+          <h4>Filtres Dublin Core</h4>
+          <br />
+          <div class="row">
+           <div class="col-sm-4">
+             <label for="creator">Créateur :</label>
+             <input class="form-control" name="creator" id="creator">
+           </div>
+           <div class="col-sm-4">
+             <label for="date">Date de création :</label>
+             <input class="form-control" name="date" id="date">
+           </div>
+          </div>
+          <br />
+          <div class="row">
+           <div class="col-sm-4">
+             <label for="items_type">Type de document :</label>
+             <input class="form-control" name="items_type" id="items_type">
+           </div>
+           <div class="col-sm-4">
+             <label for="items_dataProvider">Provider :</label>
+             <input class="form-control" name="items_dataProvider" id="items_dataProvider">
+           </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Elements de la requête -->
+      <div class='container'>
+        <div class="jumbotron">
+          <h4>Requête</h4>
+          <br />
+          <div class="row">
+           <div class="col-sm-4">
+
+             <label for="keywords">Mots clés :</label>
+             <input class="form-control" name="keywords" id="keywords">
+           </div>
+           <!--
+           <div class="col-sm-4">
+             <label for="exclude">Mots clé à exclure :</label>
+             <input class="form-control" name="exclude" id="exclude">
+           </div>
+           -->
+          </div>
+          <br />
+          <div class="row">
+           <div class="col-sm-4">
+             <label for="from">De :</label>
+             <input class="form-control" name="from" id="from" placeholder="aaaa-mm-jj">
+           </div>
+           <div class="col-sm-4">
+             <label for="to">À :</label>
+             <input class="form-control" name="to" id="to" placeholder="aaaa-mm-jj">
+           </div>
+          </div>
+        </div>
+      </div>
+
+      <!--
+      <div class="container">
+        <div class="jumbotron">
+          <h4>Localisation du fichier de sortie</h4>
+          <label class="custom-file">
+          <input type="file" id="file" class="custom-file-input">
+          <span class="custom-file-control"></span>
+          </label>
+        </div>
+      </div>
+      -->
+
+      <!-- Submit -->
+      <div class="container">
+        <div class="jumbotron">
+          <h4>Eécuter la requête</h4>
+          <br />
+          <input type="submit" class="btn btn-info" value="Envoyer"></button>
+        </div>
+      </div>
+
+    </form>
+  </body>
+</html>
