@@ -38,16 +38,12 @@ def parse_date(items):
         try:
             date = i['items_edmTimespanLabelLangAware_def']
             date = date.split(' ')[0]
-            print(i['items_edmTimespanLabelLangAware_def'], '-->', date)
-
         except KeyError:
             date = '-1'
 
         new_item = copy.deepcopy(i)
         new_item.update({'items_edmTimespanLabelLangAware_def': date})
-
         new_items.append(new_item)
-
     return new_items
 
 
@@ -61,20 +57,14 @@ def filter_dates(items, dates):
         c_date = i['items_edmTimespanLabelLangAware_def']
 
         if c_date[-2:] == '..':
-            print('je passe 1')
             new_c_date = c_date[:-2] + '00'
             new_c_date = int(new_c_date)
             if int(new_c_date) < int(date_from) or int(new_c_date) > int(date_to):
-                print(c_date, '-->', date_from, date_to)
                 to_remove.append(i)
         elif c_date == -1:
             to_remove.append(i)
-            print('je passe 2')
         else:
-            print('je passe 3')
-            print(c_date)
             if int(c_date) < int(date_from) or int(c_date) > int(date_to):
-                print(c_date, '-->', date_from, date_to)
                 to_remove.append(i)
 
     for i in to_remove:
@@ -137,12 +127,14 @@ def execute_query(query, filters, dates):
     items = filter(items, filters)
     print('[ + ] Items found:', len(items))
 
+    if len(items) == 0:
+        return None
+
     for i in items[-1]:
         print(i, ' : ', items[-1][i])
 
     # Save data to csv
     with open('./tmp/output.csv', 'w') as f:
-
         header = []
         for i in items:
             for k in i:
@@ -152,5 +144,9 @@ def execute_query(query, filters, dates):
         writer = csv.DictWriter(f, fieldnames=list(header))
         writer.writeheader()
         writer.writerows(items)
+
+    # Save data to json
+    with open('./tmp/output.json', 'w') as f:
+        json.dump(items, f)
 
     return items

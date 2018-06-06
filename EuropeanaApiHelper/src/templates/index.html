@@ -11,6 +11,9 @@
     <!-- Load jQuery -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
+    <!-- Loading page style -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/result.css') }}">
+
     <title>Europeana Search</title>
   </head>
 
@@ -31,12 +34,27 @@
       <div class="container">
         <div class="jumbotron">
           <br />
+          <a class="cust" href="/"><h1>Europeana Search API</h1></a>
           <br />
-          <h1>Europeana Search API</h1>
           <br />
-          <p>
-            Cette application utilise l'API d'Europeana afin de collecter un corpus
+          <hr class="my-4">
+          <br />
+          <p align="center">
+            Europeana Search API est une application web simple permettant de constituer des corpus <br />à partir des collections disponibles sur <a href="https://www.europeana.eu/portal/fr">le portail d'Europeana</a>.
+            <br /><b>Cette application utilise sur l'<a href="https://pro.europeana.eu/resources/apis">API d'Europeana</a> et nécessite une clé publique.</b>
           </p>
+          <br />
+          <br />
+          <h5>Clé publique :</h5>
+          <p>Une clé publique est nécessaire pour vous authentifier auprès d'Europeana.<br />Pour récupérer une clé, rendez-vous sur <a href="https://pro.europeana.eu/get-api">cette page</a>.</p>
+          <br />
+          <h5>Conseils d'utilisation :</h5>
+          <ul>
+            <li><p>Entrez un mot clés,</p></li>
+            <li><p>Choisissez une période limite pour filtrer les résulats,</p></li>
+            <li><p>Pour une recherche plus précise : compléter les champs "auteur", "date de création", "provider" ou<br>
+              encore le "type" de document</p></li>
+          </ul>
         </div>
       </div>
     </header>
@@ -46,58 +64,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-
     <form method="post">
-
-      <!-- Clé Publique -->
-      <div class='container'>
-        <div class="jumbotron">
-          <h4>Authentification</h4>
-          <br />
-          <label for="key">Clé publique :</label>
-          <input type="text" class="form-control" name="key" id="key" value={{ usr.key }}>
-        </div>
-      </div>
 
       <!-- Filtre Dublin Core -->
       <div class='container'>
         <div class="jumbotron">
-          <h4>Filtres Dublin Core</h4>
-          <br />
-          <div class="row">
-           <div class="col-sm-4">
-             <label for="creator">Créateur :</label>
-             <input class="form-control" name="creator" id="creator" placeholder="ex. John Doe">
-           </div>
-           <div class="col-sm-4">
-             <label for="date">Date de création :</label>
-             <input class="form-control" name="date" id="date" placeholder="aaaa">
-           </div>
-          </div>
-          <br />
-          <div class="row">
-           <div class="col-sm-4">
-             <label for="items_type">Type de document :</label>
-             <input class="form-control" name="items_type" id="items_type" placeholder="ex. TEXT">
-           </div>
-           <div class="col-sm-4">
-             <label for="items_dataProvider">Provider :</label>
-             <input class="form-control" name="items_dataProvider" id="items_dataProvider">
-           </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Elements de la requête -->
-      <div class='container'>
-        <div class="jumbotron">
-          <h4>Requête</h4>
+          <h4>Paramètres de la recherche</h4>
+          <hr class="my-4">
           <br />
           <div class="row">
            <div class="col-sm-4">
 
-             <label for="keywords">Mots clés :</label>
-             <input class="form-control" name="keywords" id="keywords">
+             <label for="keywords"><p>Mots clés :</p></label>
+             <input class="form-control" name="keywords" placeholder="ex. Mona Lisa" id="keywords">
            </div>
            <!--
            <div class="col-sm-4">
@@ -109,35 +88,98 @@
           <br />
           <div class="row">
            <div class="col-sm-4">
-             <label for="from">De :</label>
-             <input class="form-control" name="from" id="from" placeholder="aaaa">
+             <label for="from"><p>De :</p></label>
+             <input class="form-control" name="from" id="from" placeholder="ex. 1930">
            </div>
            <div class="col-sm-4">
-             <label for="to">À :</label>
-             <input class="form-control" name="to" id="to" placeholder="aaaa">
+             <label for="to"><p>À :</p></label>
+             <input class="form-control" name="to" id="to" placeholder="ex. 1975">
+           </div>
+          </div>
+
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <h4>Paramètres avancés</h4>
+          <hr class="my-4">
+          <br />
+          <div class="row">
+           <div class="col-sm-4">
+             <label for="creator"><p>Créateur :</p></label>
+             <input class="form-control" name="creator" id="creator" placeholder="ex. John Doe">
+           </div>
+           <div class="col-sm-4">
+             <label for="date"><p>Date de création :</p></label>
+             <input class="form-control" name="date" id="date" placeholder="aaaa">
+           </div>
+          </div>
+          <br />
+          <div class="row">
+           <div class="col-sm-4">
+             <label for="items_type"><p>Type de document :</p></label>
+             <input class="form-control" name="items_type" id="items_type" placeholder="ex. TEXT">
+           </div>
+           <div class="col-sm-4">
+             <label for="items_dataProvider"><p>Provider :</p></label>
+             <input class="form-control" name="items_dataProvider" id="items_dataProvider" placeholder="ex. Centre Georges Pompidou">
            </div>
           </div>
         </div>
       </div>
 
-      <!--
+
       <div class="container">
-        <div class="jumbotron">
-          <h4>Localisation du fichier de sortie</h4>
-          <label class="custom-file">
-          <input type="file" id="file" class="custom-file-input">
-          <span class="custom-file-control"></span>
-          </label>
+        <div class="row">
+
+          <!-- Clé Publique -->
+          <div class="col">
+            <div class="jumbotron">
+              <h4>Authentification</h4>
+              <hr class="my-4">
+              <br />
+              <label for="key"><p>Clé publique :</p></label>
+              <input type="text" class="form-control" name="key" id="key" value={{ usr.key }}>
+            </div>
+          </div>
+
+          <!-- Submit -->
+          <div class="col">
+            <div class="jumbotron">
+              <h4>Exécuter la requête</h4>
+              <hr class="my-4">
+              <br />
+              <br />
+              <br />
+              <div class="row">
+                <div class="col">
+                  <input type="submit" class="btn btn-info" value="Envoyer" onclick="warning();"></button>
+                  <script>
+                    function warning(){
+                      document.getElementById('warn_msg').innerHTML = "L'opération peut prendre quelques secondes...";
+                    };
+                  </script>
+                </div>
+                <div class="col">
+                  <p id="warn_msg"></p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      -->
 
-      <!-- Submit -->
       <div class="container">
         <div class="jumbotron">
-          <h4>Eécuter la requête</h4>
+          <h4>Credits</h4>
+          <hr class="my-4">
           <br />
-          <input type="submit" class="btn btn-info" value="Envoyer"></button>
+          <p>
+            Aidez-nous sur <a href=" https://github.com/Humanistica/ArtDesignDH">Github</a>
+            <br />
+            Version : alpha
+          </p>
         </div>
       </div>
 

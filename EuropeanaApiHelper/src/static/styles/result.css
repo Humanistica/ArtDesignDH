@@ -1,0 +1,57 @@
+table{
+    display: block;
+    width: 100%;
+    overflow-y: scroll;
+    max-height: 400px;
+}
+
+small_col{
+  max-width: 50px;
+}
+
+med_col{
+  max-width: 100px;
+}
+
+big_col{
+  max-width: 150px;
+}
+
+th, td{
+    width: 100px;
+    text-align:left;
+}
+
+a.cust:link, a.cust:visited {
+    background-color: #ff5733;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.cust:hover, a.cust:active {
+    background-color: red;
+}
+
+
+*{
+   font-family:"Courier";
+}
+
+h1{
+  font-size: 50px;
+}
+
+h4{
+  font-style: 32px;
+}
+
+h5{
+  font-style: 28px;
+}
+
+p{
+  font-size: 17px;
+}

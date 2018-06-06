@@ -1,7 +1,20 @@
 from flask import flash
+import os
+
+
+def delete_tmp_content():
+    '''
+        Remove all files in ./tmp/
+    '''
+    for f in os.listdir('./tmp/'):
+        filename = './tmp/' + f
+        os.remove(filename)
 
 
 def reset_usr_data(data):
+    '''
+        Empty all user input fields
+    '''
     for k in data:
         data[k] = ''
     return data
