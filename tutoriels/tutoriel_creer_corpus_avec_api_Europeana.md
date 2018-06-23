@@ -1,0 +1,4 @@
+## Tutoriel "pas-pas" pour créer un corpus avec l'API d'Europeana
+réalisé dans le cadre du workshop “fabriquer des jeux de données en art” du 28 au 30 mai 2018 à l'INHA
+
+### Objectifs :
