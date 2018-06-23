@@ -23,5 +23,5 @@ Le groupe de travail Art, design et humanités numériques d’Humanistica est c
 
 ## Réalisation d'une application Europeana Search API
 Dans le cadre du workshop, l'idée de créer une application simple d'utilisation pour générer un fichier CSV à partir d'une requête dans Europeana a émergé au fil des discussions.
-L'application est aujourd'hui disponible à l'adresse suivante : https://europeana-search.herokuapp.com/.
-Le répertoire github de l'application à l'adresse suivante : https://github.com/WilliamDiakite/EuropeanaAPIHelpers
+
+Réalisée par William Diakité, l'application est aujourd'hui disponible à l'adresse suivante : https://europeana-search.herokuapp.com/.
