@@ -10,8 +10,8 @@ Vous trouverez sur cette page des informations et des jeux de données à vocati
 
 Vous trouverez dans ce dossier plusieurs éléments :
 * Une [proposition de méthodologie](proposition_methodologie.md) pour la création d’un cours en digital art history et des critères pour l’établissement de corpus
-* Des [tutoriels] pour établir vos propres corpus (à partir de `Wikidata` et d’`Europeana`), pour les nettoyer (avec `OpenRefine`) et les manipuler (avec `Palladio`)
-* Des [corpus “ prêts à l’emploi ”]. Chacun de ces corpus est accompagné d'un fichier readme.
+* Des [tutoriels](/tutoriels/) pour établir vos propres corpus (à partir de `Wikidata` et d’`Europeana`), pour les nettoyer (avec `OpenRefine`) et les manipuler (avec `Palladio`)
+* Des [corpus “ prêts à l’emploi ”](./corpus/). Chacun de ces corpus est accompagné d'un fichier readme.
 
 Vous souhaitez partager vos corpus, des tutoriels ou bien faire part de ressources sur le web ? N’hésitez pas à nous les envoyer, cette page a vocation à grandir.
 
