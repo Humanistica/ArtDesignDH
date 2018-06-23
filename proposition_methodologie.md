@@ -30,7 +30,33 @@ Références vidéographiques | http://vimeo.com/36492838  | <ul>http://vimeo.co
 
 
 N.B. : il est préférable d’utiliser Libre Office plutôt que Microsoft Excel, car les fichiers CSV y sont plus facilement manipulables, en particulier à l’ouverture.
-## Modules
 
 
 ## Les types de corpus
+
+Les types de corpus diffèrent en fonction du cours.
+
+**Pour un TD de 9h**, avec une manipulation simple, il vaut mieux privilégier un jeu de données de quelques centaines d’objets avec un nombre de variables très limité. Ce jeu de données doit être fiable et ne pas nécessiter d’opération de nettoyage.
+
+**En revanche, pour un TD de 24h**, il est possible de manipuler un jeu de 2000 objets avec un nombre de variables plus important.
+
+On veillera à ce que ce jeu nécessite des opérations simples dans Open Refine (suppression d’accents, conversion de dates, ajouts de coordonnées spatiales, suppression d’informations inutiles…) pour sensibiliser les étudiants à la problématique du nettoyage des données. Si l’objectif est d’utiliser le logiciel Palladio pour la visualisation (représentations cartographiques, galeries d’images), le jeu ne doit pas dépasser 1000 objets.
+
+
+------------ | TD 9h | TD 24h
+------------ | -------------
+Nombre d’objets | 200 à 500 | Jusqu’à 2000 objets (Palladio sature à 1000 objets)
+Nombre de variables | 7  | 15
+Qualité des données | propre | À nettoyer
+
+NB.1 : pour les variables, tout dépend des exercices envisagés. Si l’on veut travailler sur :
+* des cartes avec Palladio : prévoir une colonne lieux + une colonne latitudes et longitudes (dans le cours long ces paramètres pourront être ajoutés par les étudiants)
+* Des tableaux croisés dynamiques (cours long) : prévoir des objets qui peuvent être additionnés (par exemple : nombre de tableaux par artistes ou de représentations par pièce de théâtre)
+* Des galeries d’images avec Palladio par exemple : prévoir une colonne avec les url des images.
+* Des time-line : prévoir des dates
+
+NB.2 : Le chiffre de 15 variables correspond à la norme Dublin Core. Il est également possible de créer des tableaux CSV à partir de cette norme.
+
+Dans le cours le plus long, les étudiants peuvent être autorisés à compléter ces jeux de données ou bien éventuellement à supprimer les variables qui ne leurs sont pas utiles.
+
+## Modules
