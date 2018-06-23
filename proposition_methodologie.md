@@ -20,12 +20,8 @@ Nous avons privilégié les sources en français, pour qu’elles soient davanta
 
   --- | TD 9h | TD 24h
 ------------ | ------------- | -------------
-Objectifs pédagogiques | * Découvrir les enjeux de la manipulation des données
-* Expérimenter la manipulation des données dans des environnements simples
-* Références critiques et théoriques | *Travailler à partir d’un jeu de données préexistant.
-*Acquérir et mettre en œuvre la méthode d’un projet en Humanités Numériques (outils, moyens, exploitation)
-*
-Matériel et connection nécessaire|
+Objectifs pédagogiques | * Découvrir les enjeux de la manipulation des données * Expérimenter la manipulation des données dans des environnements simples * Références critiques et théoriques | *Travailler à partir d’un jeu de données préexistant. *Acquérir et mettre en œuvre la méthode d’un projet en Humanités Numériques (outils, moyens, exploitation)
+Matériel et connection nécessaire |
 * ordinateur par étudiant ou 2 étudiants.
 * Installation de libre office (Calc). Pas d’autre logiciel spécifique à installer (applications en ligne)
 * Accès à une plateforme pédagogique type moodle pour déposer les ressources
