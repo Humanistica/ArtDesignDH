@@ -5,8 +5,8 @@ réalisé dans le cadre du workshop “fabriquer des jeux de données en art” 
 > * réaliser une reqûete wikidata pour créer un corpus comportant différentes variables et types de données (libellé, date, lieux géolocalisés).
 > * jouer cette requête dans Palladio et utiliser les différences facettes de l'application
 
-![Exemple de visualisation réalisé sur Palladio](/img/tuto_wikidata_palladion_1.png)
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Exemple de visualisation réalisé sur Palladio](./img/tuto_wikidata_palladio_1.png)
+
 
 ### Dans Palladio
 1. Aller dans Palladio http://hdlab.stanford.edu/palladio-app/#/upload
