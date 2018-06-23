@@ -44,7 +44,7 @@ On veillera à ce que ce jeu nécessite des opérations simples dans Open Refine
 
 
 ------------ | TD 9h | TD 24h
------------- | -------------
+------------ | -------------| -------------
 Nombre d’objets | 200 à 500 | Jusqu’à 2000 objets (Palladio sature à 1000 objets)
 Nombre de variables | 7  | 15
 Qualité des données | propre | À nettoyer
@@ -58,5 +58,7 @@ NB.1 : pour les variables, tout dépend des exercices envisagés. Si l’on veut
 NB.2 : Le chiffre de 15 variables correspond à la norme Dublin Core. Il est également possible de créer des tableaux CSV à partir de cette norme.
 
 Dans le cours le plus long, les étudiants peuvent être autorisés à compléter ces jeux de données ou bien éventuellement à supprimer les variables qui ne leurs sont pas utiles.
+Exemples :
+En histoire de l’art :
 
 ## Modules
