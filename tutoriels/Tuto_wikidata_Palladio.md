@@ -4,7 +4,7 @@ réalisé dans le cadre du workshop “fabriquer des jeux de données en art” 
 ### Objectifs :
 > * réaliser une reqûete wikidata pour créer un corpus comportant différentes variables et types de données (libellé, date, lieux géolocalisés).
 > * jouer cette requête dans Palladio et utiliser les différences facettes de l'application
-> ![Exemple de visualisation réalisé sur Palladio](./tuto_wikidata_palladion_1.png)
+> ![Exemple de visualisation réalisé sur Palladio](/img/tuto_wikidata_palladion_1.png)
 
 
 ### Dans Palladio
