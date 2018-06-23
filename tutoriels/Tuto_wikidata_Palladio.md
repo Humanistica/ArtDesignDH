@@ -1,21 +1,21 @@
 ## Tutoriel "pas-pas" pour utiliser (et comprendre) Palladio en utilisant les données de Wikidata
 réalisé dans le cadre du workshop “fabriquer des jeux de données en art” du 28 au 30 mai 2018 à l'INHA
 
-### Objectifs : 
+### Objectifs :
 > * réaliser une reqûete wikidata pour créer un corpus comportant différentes variables et types de données (libellé, date, lieux géolocalisés).
 > * jouer cette requête dans Palladio et utiliser les différences facettes de l'application
-> ![Exemple de visualisation réalisé sur Palladio](url)
+> ![Exemple de visualisation réalisé sur Palladio](./tuto_wikidata_palladion_1.png)
 
 
 ### Dans Palladio
-1. Aller dans Palladio http://hdlab.stanford.edu/palladio-app/#/upload 
-2. cliquer sur Load data from a SPARQL endpoint (beta) 
+1. Aller dans Palladio http://hdlab.stanford.edu/palladio-app/#/upload
+2. cliquer sur Load data from a SPARQL endpoint (beta)
 3. Dans le champs ````SPARQL endpoint````, mettre ````https://query.wikidata.org/bigdata/namespace/wdq/sparql````
 4. Dans la fenêtre, il faut écrire la requête wikidata
 
 ### Arrêtons-nous sur la requête wikidata
 
-Voici à quoi resemblera la requête finale : 
+Voici à quoi resemblera la requête finale :
 
 ````sparql
 PREFIX wikibase: <http://wikiba.se/ontology#>
@@ -53,13 +53,13 @@ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 ````sparql
 SELECT distinct ?Objet ?ObjetLabel ?LieuDecouverteLabel ?coord (CONCAT(STR(?lat),", ",STR(?long)) as ?lat_long) ?LieuConservationLabel ?coord2 (CONCAT(STR(?lat2),", ",STR(?long2)) as ?lat_long2)
 ````
-   * 2 points d'attention à regarder 
-      * Les variables ````?.....Label```` permet d'afficher les labels grâce au service qui sera appelé dans la requête via 
+   * 2 points d'attention à regarder
+      * Les variables ````?.....Label```` permet d'afficher les labels grâce au service qui sera appelé dans la requête via
   ````bd:serviceParam wikibase:language "fr,en"}````
       * Palladio **exigent que les informations de géolocalisation soit dans une même et unique cellule (lattitude, longitude)**. Pour cela, il faut donc créer dans la requête ce champs de manière dynamique grâce à ````sparql
       (CONCAT(STR(?lat),", ",STR(?long)) as ?lat_long)````
 
-* Le ````WHERE```` permet de rédiger la requête en tant que tel 
+* Le ````WHERE```` permet de rédiger la requête en tant que tel
 
 ````sparql
 {
