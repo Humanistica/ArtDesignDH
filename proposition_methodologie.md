@@ -20,9 +20,7 @@ Nous avons privilégié les sources en français, pour qu’elles soient davanta
 ------------ | TD 9h         | TD 24h
 ------------ | ------------- | -------------
 Objectifs pédagogiques | <ul><li> Découvrir les enjeux de la manipulation des données</li>  <li> Expérimenter la manipulation des données dans des environnements simples</li> <li>Références critiques et théoriques</li></ul>  | <ul><li> Travailler à partir d’un jeu de données préexistant. </li><li>Acquérir et mettre en œuvre la méthode d’un projet en Humanités Numériques (outils, moyens, exploitation)</li><li>Bonne connaissance du corpus théorique et critique et des sites ressources.</li></ul>
-Matériel et connection nécessaire | <ul><li>1 ordinateur par étudiant ou 2 étudiants.</li> <li>Installation de libre office (Calc). Pas d’autre logiciel spécifique à installer (applications en ligne)
-</li> <li>Accès à une plateforme pédagogique type moodle pour déposer les ressources
-</li> <li>Connexion internet indispensable (les logiciels utilisés sont tous en ligne et dans des navigateurs). Eviter Safari, privilégier firefox et chrome.</li> </ul>   | <ul><li>1 ordinateur par étudiant ou 2 étudiants.
+Matériel et connection nécessaire | <ul><li>1 ordinateur par étudiant ou 2 étudiants.</li> <li>Installation de libre office (Calc). Pas d’autre logiciel spécifique à installer (applications en ligne)</li> <li>Accès à une plateforme pédagogique type moodle pour déposer les ressources</li> <li>Connexion internet indispensable (les logiciels utilisés sont tous en ligne et dans des navigateurs). Eviter Safari, privilégier firefox et chrome.</li> </ul>   | <ul><li>1 ordinateur par étudiant ou 2 étudiants.
 </li> <li>Installation d’Open Refine et de Libre Office (Calc). Pas d’autre logiciel spécifique à installer (applications en ligne)</li> <li>Accès à une plateforme pédagogique type moodle pour déposer les ressources
 </li> <li>Connexion internet indispensable (les logiciels utilisés sont tous en ligne et dans des navigateurs). Eviter Safari, privilégier firefox et chrome.</li> </ul>
 Nombre maximum d’étudiants | 15   |15
