@@ -15,8 +15,13 @@ Vous trouverez dans ce dossier plusieurs éléments :
 
 Vous souhaitez partager vos corpus, des tutoriels ou bien faire part de ressources sur le web ? N’hésitez pas à nous les envoyer, cette page a vocation à grandir.
 
-## Méthologie pour la réalisation de ce repository
+## Méthologie de travail
 Le workshop a eu lieu du 28 au 30 mai 2018 à Paris grâce au soutien d’Humanistica et du laboratoire Thalim (CNRS).
 Participants : `Clarisse Bardiot`, `Antoine Courtin`, `William Diakité`, `Everardo Reyes`, `Michèle Brunet`, `Marc Douguet`, `Nicolas Gonthier`, `Laurence Guellec` et `Nicolas Thély`.
 
 Le groupe de travail Art, design et humanités numériques d’Humanistica est co-animé par Clarisse Bardiot et Nicolas Thély.
+
+## Réalisation d'une application Europeana Search API
+Dans le cadre du workshop, l'idée de créer une application simple d'utilisation pour générer un fichier CSV à partir d'une requête dans Europeana a émergé au fil des discussions.
+L'application est aujourd'hui disponible à l'adresse suivante : https://europeana-search.herokuapp.com/.
+Le répertoire github de l'application à l'adresse suivante : https://github.com/WilliamDiakite/EuropeanaAPIHelpers
