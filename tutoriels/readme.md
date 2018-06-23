@@ -8,5 +8,5 @@ Liste des tutoriels :
   * abstract du tuto
 * [Créer un corpus avec l'API d'Europena](tutoriel_creer_corpus_avec_api_Europeana.md)
     * abstract du tuto
-* [Utiliser Palladio à partir des données de Wikidata](tutoriel_utiliser_palladio_avec_wikidatao.md)
+* [Utiliser Palladio à partir des données de Wikidata](tutoriel_utiliser_palladio_avec_wikidata.md)
   * tuto pour réaliser une carte d'objets archéologiques en affichant le lieu de découverte et le lieu de conservation actuel en utilisant une requête SPARQL de Wikidata
