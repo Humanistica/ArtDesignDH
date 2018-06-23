@@ -57,8 +57,28 @@ NB.1 : pour les variables, tout dépend des exercices envisagés. Si l’on veut
 
 NB.2 : Le chiffre de 15 variables correspond à la norme Dublin Core. Il est également possible de créer des tableaux CSV à partir de cette norme.
 
-Dans le cours le plus long, les étudiants peuvent être autorisés à compléter ces jeux de données ou bien éventuellement à supprimer les variables qui ne leurs sont pas utiles.
-Exemples :
-En histoire de l’art :
+Dans le cours le plus long, les étudiants peuvent être autorisés à compléter ces jeux de données ou bien éventuellement à supprimer les variables qui ne leurs sont pas
+utiles.
+
+Exemples : En histoire de l’art :
+
+<table>
+  <tr>
+    <th colspan="7">Cours de 9h</th>
+  </tr>
+  <tr>
+    <td>Titre de l’oeuvre</td>
+    <td>artiste</td>
+    <td>Date de création</td>
+    <td>Lieu de conservation</td>
+    <td>Latitude, longitude</td>
+    <td>Type</td>
+    <td>Url de l’image</td>
+  </tr>
+  <tr>
+    <td colspan="7">Ce tableau permet dans Palladio de réaliser une time line, une carte, une galerie d’images, un graphe relationnel (selon le type et le lieu de conservation); dans un tableur des graphes statistiques.</td>
+  </tr>
+</table>
+
 
 ## Modules
