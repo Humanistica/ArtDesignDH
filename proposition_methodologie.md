@@ -60,7 +60,7 @@ NB.2 : Le chiffre de 15 variables correspond à la norme Dublin Core. Il est ég
 Dans le cours le plus long, les étudiants peuvent être autorisés à compléter ces jeux de données ou bien éventuellement à supprimer les variables qui ne leurs sont pas
 utiles.
 
-Exemples : En histoire de l’art :
+#### Exemples : En histoire de l’art :
 
 <table>
   <tr>
@@ -77,6 +77,52 @@ Exemples : En histoire de l’art :
   </tr>
   <tr>
     <td colspan="7">Ce tableau permet dans Palladio de réaliser une time line, une carte, une galerie d’images, un graphe relationnel (selon le type et le lieu de conservation); dans un tableur des graphes statistiques.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan="15">Cours de 24h</th>
+  </tr>
+  <tr>
+    <td>id</td>
+    <td>Titre de l’oeuvre</td>
+    <td>artiste</td>
+    <td>sexe</td>
+    <td>nationalité</td>
+    <td>Date de création</td>
+    <td>Lieu de conservation</td>
+    <td>Latitude, longitude</td>
+    <td>Type</td>
+    <td>URL de l'image</td>
+    <td>matérieux</td>
+    <td>date d'acquisition</td>
+    <td>dimension</td>
+    <td>exposition </td>
+    <td>mouvement</td>
+  </tr>
+  <tr>
+    <td colspan="15">Ce tableau permet dans Palladio de réaliser une time line, une carte, une galerie d’images, un graphe relationnel (selon le type et le lieu de conservation); dans un tableur des graphes statistiques, par exemple sur la durée d’acquisition d’une oeuvre, sur la représentation des genres, des types ou des nationalités dans une collection, etc. ; dans Rawgraph pour la visualisation des données statistiques.</td>
+  </tr>
+</table>
+
+#### Exemples : En études théâtrales :
+
+<table>
+  <tr>
+    <th colspan="7">Cours de 9h</th>
+  </tr>
+  <tr>
+    <td>Auteur ou metteur en scène</td>
+    <td>Titre de la pièce ou du spectacle</td>
+    <td>Date de publication ou de création</td>
+    <td>Lieu de publication ou de création</td>
+    <td>Latitude, longitude</td>
+    <td>Genre</td>
+    <td>Langue</td>
+  </tr>
+  <tr>
+    <td colspan="7">Proposition d’exercices : produire une timeline des spectacles, une carte des lieux de création (Palladio), représenter le nombre de spectacles par auteur/par genre/par lieu de création/par langue (Calc).</td>
   </tr>
 </table>
 
