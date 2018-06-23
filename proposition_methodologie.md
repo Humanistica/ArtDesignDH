@@ -126,5 +126,36 @@ utiles.
   </tr>
 </table>
 
+<table>
+  <tr>
+    <th colspan="15">Cours de 24h</th>
+  </tr>
+  <tr>
+    <td>Metteur en scène</td>
+    <td>Auteur ou metteur en scène d’origine</td>
+    <td>Titre</td>
+    <td>Date du spectacle</td>
+    <td>Lieu de création : nom</td>
+    <td>Lieu de création : coordonnées géographique</td>
+    <td>Genre</td>
+    <td>Langue</td>
+    <td>URL d’un portrait de l’auteur</td>
+    <td>Nombre d’acteurs ou de danseurs</td>
+    <td>Date d’inauguration de la salle</td>
+    <td>Date de fermeture de la salle</td>
+    <td>Date de la première mise en scène de l’œuvre</td>
+    <td>Lieu de la première mise en scène de l’œuvre : nom</td>
+    <td>Lieu de la première mise en scène de l’œuvre : coordonnées</td>
+  </tr>
+  <tr>
+    <td colspan="15">Ce tableau étend le précédent en permettant de lister différentes mises en scène d’une même œuvre : on distingue donc le créateur d’origine et celui qui la réinterprète. Aux exercices ci-dessus s’en ajoutent de nouveaux, qui permettent d’observer la circulation des œuvres et l’évolution du canon théâtral ou chorégraphique : créer une carte avec le lieu de création d’une œuvre et tous les lieux où celle-ci à été reprise (Palladio) ; produire un graphique montrant l’évolution du nombre de reprises d’un ou de plusieurs spectacles au cours du temps (Calc) ; les colonnes “ date d’inauguration/de fermeture de la salle ” permettent à la fois de créer une timeline des salles de spectacles, mais aussi de dynamiser la carte des lieux de création en combinant les outils de cartographie et de chronologie de Palladio ; on pourra également produire une galerie d’images à partir des portraits des artistes, et approfondir l’analyse quantitative des spectacles en comparant le nombre d’acteurs ou de danseurs sollicités selon les période, les auteurs, etc.</td>
+  </tr>
+</table>
+
+Les données disponibles sur le théâtre sont encore très pauvres dans wikidata. Néanmoins, un projet de versement des données est en cours. On pourra consulter utilement la page suivante pour suivre le projet : https://www.wikidata.org/wiki/Wikidata:WikiProject_Performing_arts
+
+Dans le répertoire [tutoriels](./tutoriels/) figurent de nombreux exemples de requêtes qui peuvent servir de point de départ pour construire un corpus.
+
+
 
 ## Modules
