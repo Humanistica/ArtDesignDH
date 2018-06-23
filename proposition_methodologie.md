@@ -18,9 +18,8 @@ Nous avons privilégié les sources en français, pour qu’elles soient davanta
 ## Tableau synoptique du déroulé des cours
 
 
- TD 9h | TD 9h | TD 24h
+  --- | TD 9h | TD 24h
 ------------ | ------------- | -------------
-
 Objectifs pédagogiques | * Découvrir les enjeux de la manipulation des données
 * Expérimenter la manipulation des données dans des environnements simples
 * Références critiques et théoriques | *Travailler à partir d’un jeu de données préexistant.
