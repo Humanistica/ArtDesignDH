@@ -1,6 +1,6 @@
 # Quelques corpus
 
-Quelques corpus de données réalisés lors du Workshop avec pour chacun d'entre eux, un fichier explicatif
+Quelques corpus de données réalisés lors du Workshop avec pour chacun d'entre eux, un fichier explicatif qui détaille les objetifs et la facon dont la corpus a été créé.
 
 Exemple :
 
@@ -11,4 +11,4 @@ Exemple :
 * [Corpus Peintres décédés à Paris ](./corpus_peintre_decedes_paris/)
     * micro description du corpus
 * [Corpus auteurs ](./corpus_auteurs/)
-        * micro description du corpus
+    * micro description du corpus
