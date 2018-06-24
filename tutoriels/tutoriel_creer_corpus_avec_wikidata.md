@@ -44,11 +44,12 @@ Pour formalisation de la question : on peut se dire que :
 * qui sont des vases grecs antiques
 * et
   * qui sont conservés au MET
-  * et
-    * qui ont une image
+  * qui ont une image
 
 Avec l’assistant :
 
 * Créer un filtre. Un filtre est composé de **deux champs** : **une propriété** et **la valeur de cette propriété**. Pour remplir ces deux champs, WD propose un moteur de remplissage automatique.
 
 En passant la souris sur le champ, une fenêtre pop-up donne une définition pour aider à bien choisir la propriété.
+
+![Alt Text](./img/tuto_wikidata_assistant_requete.gif)
