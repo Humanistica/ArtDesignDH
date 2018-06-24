@@ -25,3 +25,30 @@ Dans tous les cas, un conseil : partir d’un exemple de requête préenregistr�
 Deux sources pour "appréhender" les requêtes SPARQL :
 * [Page web contenant des exemples de requêtes SQARQL  pour Wikidata](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples)
 * [La page web tutoriel SQARQL pour un usage sur Wikidata est aussi utile](https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial)
+
+### Formaliser sa question pour la transformer en requête :
+
+**Quelles informations/champs est-ce que je veux récupérer (zone “afficher”) ?**
+
+La démarche de SPARQL consiste à poser des filtres successifs qui permettent de trier les éléments dans WD. Il faut donc formaliser ce que l’on cherche à obtenir.
+
+> Exemple 1 : je veux obtenir un corpus composés des vases grecs qui sont conservés au Metropolitan Museum de New York pour lesquels une image est disponible
+
+Pour formalisation de la question : on peut se dire que :
+
+> Je veux afficher :
+* le nom
+* l’image
+
+> pour tous les éléments de WD
+* qui sont des vases grecs antiques
+* et
+  * qui sont conservés au MET
+  * et
+    * qui ont une image
+
+Avec l’assistant :
+
+* Créer un filtre. Un filtre est composé de **deux champs** : **une propriété** et **la valeur de cette propriété**. Pour remplir ces deux champs, WD propose un moteur de remplissage automatique.
+
+En passant la souris sur le champ, une fenêtre pop-up donne une définition pour aider à bien choisir la propriété.
