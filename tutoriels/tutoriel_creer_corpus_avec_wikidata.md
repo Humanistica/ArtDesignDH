@@ -115,7 +115,7 @@ Par défaut cette propriété est indiquée comme OPTIONAL/optionnelle. Même si
 
 La vue par défaut est un tableau. On peut modifier cet affichage en cliquant sur le bouton en haut à gauche de la liste des résultats, avec de multiples modes d’affichage possibles. Ces options sont actives uniquement si la requête renvoit des infos permettant tel ou tel affichage (par exemple, pour créer une carte, il faut dans la requête récupérer les informations de géolocalisation, etc.)
 
-![Alt Text](./img/tuto_wikidata_assistant_requete.gif)
+![Alt Text](./img/tuto_wikidata_affichage_requette.gif)
 
 La visualisation des résultats avant tout export s’impose, car c’est le moyen de vérifier s’il y a ou non des intrus dans les résultats obtenus : par exemple, des objets qui sont des “ vases ” mais qui ne relèvent pas de la catégorie “céramique grecque” car ils sont en bronze ! L’étape suivante peut être soit un nettoyage des données dans Open Refine et/ou modification dans Wikidata.
 On peut télécharger les résultats sous différents formats (dont le CSV) bouton en haut à droite de la liste obtenue.
