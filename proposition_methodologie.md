@@ -31,6 +31,25 @@ Références vidéographiques | http://vimeo.com/36492838  | <ul>http://vimeo.co
 
 N.B. : il est préférable d’utiliser Libre Office plutôt que Microsoft Excel, car les fichiers CSV y sont plus facilement manipulables, en particulier à l’ouverture.
 
+## Modules
+
+**Chaque module fait 3h environ** :
+
+* **Pour le cours de 9h** :
+  * Contexte (humanités numériques). Voir par exemple ce diaporama : https://www.sites.univ-rennes2.fr/urfist/ressources/introduction-aux-humanites-numeriques
+  * Open Refine / traitement des données
+  * Visualisation / interprétation : Palladio
+
+* **Pour le cours de 24h** :
+* Contexte 1 (humanités numériques). Voir par exemple ce diaporama : https://www.sites.univ-rennes2.fr/urfist/ressources/introduction-aux-humanites-numeriques
+* Contexte 2 (Digital art history) + Présentation des jeux de données
+* Open Refine / traitement des données
+* Première découverte des données et manipulation + questions de recherche : databasic wtfcsv https://www.databasic.io/en/wtfcsv/ Cette application web permet de commencer à explorer les données sous formes de visualisations basiques.
+Visualisation / interprétation : Palladio
+* Tableau croisés dynamiques : parmi les nombreux tutoriels en ligne : https://malick-nseck.developpez.com/tutoriels/apprendre-a-creer-tableau-croise-dynamique-avec-libre-office-calc/
+* Visualisation de données : rawgraph, tableurs… http://rawgraphs.io/
+* Présentation / exposés sur les projets réalisés
+
 
 ## Les types de corpus
 
@@ -155,7 +174,3 @@ utiles.
 Les données disponibles sur le théâtre sont encore très pauvres dans wikidata. Néanmoins, un projet de versement des données est en cours. On pourra consulter utilement la page suivante pour suivre le projet : https://www.wikidata.org/wiki/Wikidata:WikiProject_Performing_arts
 
 Dans le répertoire [tutoriels](./tutoriels/) figurent de nombreux exemples de requêtes qui peuvent servir de point de départ pour construire un corpus.
-
-
-
-## Modules
