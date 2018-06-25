@@ -41,14 +41,14 @@ N.B. : il est préférable d’utiliser Libre Office plutôt que Microsoft Excel
   * Visualisation / interprétation : Palladio
 
 * **Pour le cours de 24h** :
-* Contexte 1 (humanités numériques). Voir par exemple ce diaporama : https://www.sites.univ-rennes2.fr/urfist/ressources/introduction-aux-humanites-numeriques
-* Contexte 2 (Digital art history) + Présentation des jeux de données
-* Open Refine / traitement des données
-* Première découverte des données et manipulation + questions de recherche : databasic wtfcsv https://www.databasic.io/en/wtfcsv/ Cette application web permet de commencer à explorer les données sous formes de visualisations basiques.
+  * Contexte 1 (humanités numériques). Voir par exemple ce diaporama : https://www.sites.univ-rennes2.fr/urfist/ressources/introduction-aux-humanites-numeriques
+  * Contexte 2 (Digital art history) + Présentation des jeux de données
+  * Open Refine / traitement des données
+  * Première découverte des données et manipulation + questions de recherche : databasic wtfcsv https://www.databasic.io/en/wtfcsv/ Cette application web permet de commencer à explorer les données sous formes de visualisations basiques.
 Visualisation / interprétation : Palladio
-* Tableau croisés dynamiques : parmi les nombreux tutoriels en ligne : https://malick-nseck.developpez.com/tutoriels/apprendre-a-creer-tableau-croise-dynamique-avec-libre-office-calc/
-* Visualisation de données : rawgraph, tableurs… http://rawgraphs.io/
-* Présentation / exposés sur les projets réalisés
+  * Tableau croisés dynamiques : parmi les nombreux tutoriels en ligne : https://malick-nseck.developpez.com/tutoriels/apprendre-a-creer-tableau-croise-dynamique-avec-libre-office-calc/
+  * Visualisation de données : rawgraph, tableurs… http://rawgraphs.io/
+  * Présentation / exposés sur les projets réalisés
 
 
 ## Les types de corpus
