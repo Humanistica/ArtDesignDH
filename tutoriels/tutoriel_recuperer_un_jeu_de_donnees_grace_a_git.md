@@ -1,10 +1,12 @@
 # Récupérer un jeu de données et le mettre à jour grâce à git et Github
 
 
+## Table des matières
+
 * [Introduction](#introduction)
 * [Git et Github, comment ça marche ?](#git-et-github-comment-ça-marche)
 * [Récupérer des données grâce à Github Desktop (recommandé)](#récupérer-des-données-grâce-à-github-desktop-recommandé)
-  * [Installer *Github Desktop*](#installer-Github-desktop)
+  * [Installer *Github Desktop*](#installer-github-desktop)
   * [Cloner et mettre à jour](#cloner-et-mettre-à-jour)
 * [Récupérer des données via le terminal](#récupérer-des-données-via-le-terminal)
   * [Installer *Git*](#installer-git)
