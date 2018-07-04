@@ -1,21 +1,14 @@
 # Récupérer un jeu de données et le mettre à jour grâce à git et Github
 
----
 
-* [Pré-requis](#Pré-requis)
-* [Introduction](#Introduction)
-* [Git et Github, comment ça marche ?](#Git-et-Github-comment-ça-marche)
+* [Introduction](#introduction)
+* [Git et Github, comment ça marche ?](#git-et-github-comment-ça-marche)
 * [Récupérer des données grâce à Github Desktop (recommandé)](#récupérer-des-données-grâce-à-github-desktop-recommandé)
   * [Installer *Github Desktop*](#installer-Github-desktop)
   * [Cloner et mettre à jour](#cloner-et-mettre-à-jour)
 * [Récupérer des données via le terminal](#récupérer-des-données-via-le-terminal)
   * [Installer *Git*](#installer-git)
-  * [Cloner et mettre à jour](#cloner-et-mettre-à-jour)
-
-
-## Pré-requis
-
-Pour suivre ce tutoriel, il est nécessaire de posseder un compte Github. [Créer un compte](https://github.com/join).
+  * [Cloner et mettre à jour](#mettre-à-jour-localement-un-répertoire)
 
 
 ## Introduction
@@ -90,13 +83,13 @@ Si le résultat retourné indique que Git n'est pas installé, utilisez [l'insta
 Sous Windows, vous pouvez télécharger cet [installeur](http://git-scm.com/download/win).
 
 
-### Récupérer des données disponibles sur Github
+### Récupérer des données via le terminal
 
 *Note : la démarche décrite ci-dessous nécessite de connaître les connaissances basique de l'utilisation d'un terminal.*
 
 Dans ce paragraphe, nous allons récupérer la [collection du MoMA](https://github.com/MuseumofModernArt/collection) et voir comment la mettre à jour. Vous pouvez cependant appliquer ce tutoriel à un autre répertoire Github.
 
-![alt text](https://github.com/Humanistica/ArtDesignDH/tutoriels/img/tuto_synchro_donnes_1.png)
+![](https://github.com/Humanistica/ArtDesignDH/tutoriels/img/tuto_synchro_donnees_1.png)
 
 Une fois sur la page principale du repertoire à acquérir, appuyez sur "Clone or download" et copiez le lien présent dans le pop-up.
 
