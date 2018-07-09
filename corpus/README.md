@@ -1,6 +1,6 @@
 # Quelques corpus
 
-Quelques corpus de données réalisés lors du Workshop avec pour chacun d'entre eux, un fichier explicatif qui détaille les objetifs et la facon dont la corpus a été créé.
+Quelques corpus de données réalisés lors du Workshop avec, pour chacun d'entre eux, un fichier explicatif qui détaille les objectifs et la façon dont le corpus a été créé.
 
 Exemple :
 
