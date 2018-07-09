@@ -16,4 +16,4 @@ Le même principe peut être utilisé à partir des fichiers des collections :
 * de la Tate Modern : https://github.com/tategallery/collection 
 * Du Carnegie Museum of Art : https://github.com/cmoa/collection
 
-Si vous réalisez des extractions de corpus à partir de ces jeux de données, n’hésitez pas à les partager dans ce dossier en documentant la date où le jeu de données a été réalisée ainsi que les manipulations effectuées à partir du jeu initial.
+Si vous réalisez des extractions de corpus à partir de ces jeux de données, n’hésitez pas à les partager dans ce dossier en documentant la date à laquelle le jeu de données a été réalisé, ainsi que les manipulations effectuées à partir du jeu initial.
