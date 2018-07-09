@@ -15,7 +15,7 @@ Vous trouverez dans ce dossier plusieurs éléments :
 
 Vous souhaitez partager vos corpus, des tutoriels ou bien faire part de ressources sur le web ? N’hésitez pas à nous les envoyer, cette page a vocation à grandir.
 
-## Méthologie de travail
+## Méthodologie de travail
 Le workshop a eu lieu du 28 au 30 mai 2018 à Paris grâce au soutien d’Humanistica et du laboratoire Thalim (CNRS).
 Participants : `Clarisse Bardiot`, `Antoine Courtin`, `William Diakité`, `Everardo Reyes`, `Michèle Brunet`, `Marc Douguet`, `Nicolas Gonthier`, `Laurence Guellec` et `Nicolas Thély`.
 
