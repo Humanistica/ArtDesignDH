@@ -5,7 +5,8 @@
 
 * [Introduction](#introduction)
 * [Git et Github, comment ça marche ?](#git-et-github-comment-ça-marche)
-* [Récupérer des données grâce à Github Desktop (recommandé)](#récupérer-des-données-grâce-à-github-desktop-recommandé)
+* [Récupérer l'adresse d'un répertoire à synchroniser](Récupérer-l-adresse-d-un-répertoire-à-synchroniser)
+* [Récupérer des données grâce à Github Desktop (recommandé)](#récupérer-des-données-grâce-à-github-desktop)
   * [Installer *Github Desktop*](#installer-github-desktop)
   * [Cloner et mettre à jour](#cloner-et-mettre-à-jour)
 * [Récupérer des données via le terminal](#récupérer-des-données-via-le-terminal)
@@ -15,7 +16,7 @@
 
 ## Introduction
 
-De plus en plus d'institutions mettent leurs collections en ligne grâce au servcie d'hébergement *Github.com*.
+De plus en plus d'institutions mettent leurs collections en ligne grâce au service d'hébergement *Github.com*.
 
 
 La mise à disposition des données sur cette plateforme permet aux utilisateurs de créer une copie dite *locale* des collections (ie. sur le disque dur d'un ordinateur) et de les mettre à jour rapidement afin de prendre en compte les dernières modifications effectuées par l'institution qui les fournies.
@@ -34,7 +35,7 @@ L'outil fonctionne de la manière suivante : un répertoire distant (en anglais,
 
 Une fois le répertoire copié localement, des documents peuvent être ajoutés, modifiés ou supprimés. Jusque là, seul l'auteur de ces modifications peut les constater puisque ces dernières sont effectuées sur son ordinateur.
 
-Pour partager les modifications au reste des utilisateurs, l'auteur doit dans un premier temps signaler à Git que des modifications ont été effectuées puis, dans un second temps, envoyer le contenu de son repertoire local vers le repertoire distant afin que ce dernier soit mis à jour.
+Pour partager les modifications au reste des utilisateurs, l'auteur doit dans un premier temps signaler à Git que des modifications ont été effectuées puis, dans un second temps, envoyer le contenu de son répertoire local vers le répertoire distant afin que ce dernier soit mis à jour.
 
 Les modifications sont alors visibles sur le serveur distant, les utilisateurs peuvent demander à Git de mettre à jour localement leur répertoire.
 
@@ -44,16 +45,44 @@ Ce processus, même s'il peut sembler contraignant, permet aux différents parti
 #### La synchronisation de répertoires
 
 Pour synchroniser des données disponibles sur Github, nous utiliserons seulement quelques unes des étapes décrites dans le fonctionnement global. La démarche est composée de deux étapes :
-1. Copie du répertoire distant vers un repertoire local,
+1. Copie du répertoire distant vers un répertoire local,
 2. Demande de mise à jour du répertoire local.
 
 
-## Récupérer des données grâce à Github Desktop (recommandé)
+## Récupérer l'adresse d'un répertoire à synchroniser
+
+Peu importe la méthode que vous choisirez (Github Desktop ou terminal), il est nécessaire de récupérer l'adresse d'un répertoire à copier localement. Pour ce tutoriel, nous utiliserons le répertoire suivant : https://github.com/MuseumofModernArt/collection correspondant aux collections du MoMA.
+
+Sur la page des collections du MoMA il est possible de copier l'adresse du répertoire grâce au boutton vert "Clone or Download". Après avoir cliquer sur le bouton, une fenêtre de dialogue apparaît : copiez l'adresse fournie.
+
+![](./img/tuto_synchro_1.png)
+
+Vous pouvez tout à fait utiliser un autre répertoire pour continuer le reste de ce tutoriel.
+
+## Récupérer des données grâce à Github Desktop
 
 ### Installer Github Desktop
 **Systèmes d'exploitation compatibles** : macOSX, Windows
 
-À venir...
+Téléchargez l'application Github Desktop sur le lien suivant : https://desktop.github.com/ .
+
+### Récupérer des données
+
+Lorsque l'application est ouverte, cliquer sur "File" puis "Clone Repository..." pour faire apparaître une page de dialogue. Dans l'onglet "URL", insérez l'URL du répertoire précédemment copiée dans le champs "Repository URL" puis choisissez un chemin de destination (c'est à cette destination que le répertoire sera enregistré).
+
+![](./img/tuto_synchro_3.png)
+
+Une fois les deux champs dûment remplis, cliquez sur "Clone" pour télécharger le répertoire.
+
+
+### Mettre à jour un répertoire local
+
+Les répertoires clonés avec Github Desktop apparaissent dans le menu déroulant "Current Repositories". Choissez le répertoire à synchroniser grâce au menu déroulant.
+
+Pour mettre à jour son contenu, appuyez sur le bouton "Fetch Origin".
+
+![](./img/tuto_synchro_5.png)
+
 
 
 ## Récupérer des données via le terminal
@@ -82,20 +111,19 @@ Si le résultat retourné indique que Git n'est pas installé, utilisez [l'insta
 
 #### Windows
 
-Sous Windows, vous pouvez télécharger cet [installeur](http://git-scm.com/download/win).
+Sous Windows, vous pouvez télécharger cet [installer](http://git-scm.com/download/win).
 
 
-### Récupérer des données via le terminal
+### Récupérer des données
 
 *Note : la démarche décrite ci-dessous nécessite de connaître les connaissances basique de l'utilisation d'un terminal.*
 
 Dans ce paragraphe, nous allons récupérer la [collection du MoMA](https://github.com/MuseumofModernArt/collection) et voir comment la mettre à jour. Vous pouvez cependant appliquer ce tutoriel à un autre répertoire Github.
 
-![](https://github.com/Humanistica/ArtDesignDH/tutoriels/img/tuto_synchro_donnees_1.png)
 
-Une fois sur la page principale du repertoire à acquérir, appuyez sur "Clone or download" et copiez le lien présent dans le pop-up.
 
-Ensuite, ouvrez un terminal :
+
+Commencez par ouvrir un terminal :
 * Sous Linux, utilisez le raccourci *Ctrl + Alt + t*
 * Sous MacOSX, utilisez le raccourci *Cmd + Space*, entrez "terminal" dans la barre de recherche puis appuyez sur la touche Entrer.
 * Sous Windows, utilisez le raccourci *Win + r*, entrez "cmd" dans la zone de recherche puis appuyez sur la touche Entrer.
@@ -112,9 +140,9 @@ Entrez la commande suivante pour copier localement le contenu du répertoire dis
 Le contenu du répertoire distant est alors présent sur votre ordinateur.
 
 
-### Mettre à jour localement un répertoire
+### Mettre à jour un répertoire local
 
-Grâce à la commande *cd* (*dir*, sous Windows), accédez au repertoire précédement clôné.
+Grâce à la commande *cd* (*dir*, sous Windows), accédez au répertoire précédemment cloné.
 Pour mettre à jour le répertoire, entrez la commande suivante :
 > git pull
 
